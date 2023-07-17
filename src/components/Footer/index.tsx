@@ -1,6 +1,6 @@
 export default function () {
   return (
-    <footer className="bg-white rounded-lg shadow mx-2 my-8 dark:bg-gray-800">
+    <footer className="flex w-full max-w-[1200px] bg-white rounded-lg shadow mx-2 my-8 dark:bg-gray-800">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           Development with &hearts; by{' '}

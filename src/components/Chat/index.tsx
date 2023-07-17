@@ -9,12 +9,14 @@ export default function () {
   const
     { messages, input, handleInputChange, handleSubmit } = useChat()
   return (
-    <Card className='w-[800px] h-[800px] grid grid-rows-[min-content_1fr_min-content]'>
-      <CardHeader>
+    <Card className='w-full h-full overflow-hidden max-w-[1200px] grid grid-rows-[min-content_1fr_min-content]'>
+      <CardHeader className="bg-slate-600 text-slate-50">
         <CardTitle>Chat AI</CardTitle>
-        <CardDescription>Using Vercel SDK to create a chat bot.</CardDescription>
+        <CardDescription className="text-slate-300">
+          Using Vercel SDK to create a chat bot.
+        </CardDescription>
       </CardHeader>
-      <CardContent className='space-y-6'>
+      <CardContent className='space-y-6 overflow-y-scroll py-4'>
         {messages.map(message => {
           return (
             <div key={message.id} className='flex leading-7 gap-4'>
@@ -29,7 +31,7 @@ export default function () {
                   <AvatarImage src='' />
                 </Avatar>}
 
-              <p className='text-zinc-700 bg-zinc-200'>
+              <p className='text-zinc-700'>
                 <span className='block font-semibold'>
                   {message.role === 'user' ? 'Usuário' : 'Assitente'}
                 </span>

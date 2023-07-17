@@ -1,8 +1,9 @@
 import Chat from "@/components/Chat";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className='flex items-center justify-center min-h-screen bg-slate-100 p-8'>
+    <main className='flex w-full items-center justify-center h-[90%] max-h-full'>
       <Chat />
     </main>
   )
