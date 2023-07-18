@@ -6,6 +6,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { useChat } from 'ai/react'
 
 export default function () {
+  console.log(process.env.NEXT_PUBLIC_OPENAI_API_KEY)
   const
     { messages, input, handleInputChange, handleSubmit } = useChat()
   return (
